@@ -136,61 +136,99 @@ footer {
 <section style="text-align:center;">
 
 
-<section class="planes-section">
-  <h2>Nuestros Planes</h2>
-  <p class="subtexto">Soluciones simples y claras para tu empresa</p>
 
-  <div class="planes-container">
+planes-section {
+  text-align: center;
+  margin-top: 60px;
+}
 
-    <!-- Básico -->
-    <div class="plan">
-      <h3>Básico</h3>
-      <p class="precio">$129.990</p>
-      <span class="mes">/mes</span>
+.subtexto {
+  color: #666;
+  margin-bottom: 40px;
+}
 
-      <ul>
-        <li>Asesoría en RR.HH.</li>
-        <li>Gestión documental</li>
-        <li>Hasta 5 trabajadores</li>
-      </ul>
+.planes-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
 
-      <a href="https://wa.me/56987610278" class="btn">Consultar</a>
-    </div>
+.plan {
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  position: relative;
+  transition: transform 0.3s;
+}
 
-    <!-- PRO -->
-    <div class="plan destacado">
-      <div class="popular">Más elegido</div>
+.plan:hover {
+  transform: translateY(-8px);
+}
 
-      <h3>Pro</h3>
-      <p class="precio">$249.990</p>
-      <span class="mes">/mes</span>
+.plan h3 {
+  margin-bottom: 10px;
+}
 
-      <ul>
-        <li>Hasta 15 trabajadores</li>
-        <li>Impuestos completos</li>
-        <li>Soporte prioritario</li>
-      </ul>
+.precio {
+  font-size: 30px;
+  font-weight: bold;
+}
 
-      <a href="https://wa.me/56987610278" class="btn">Consultar</a>
-    </div>
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
 
-    <!-- Premium -->
-    <div class="plan">
-      <h3>Premium</h3>
-      <p class="precio">$499.990</p>
-      <span class="mes">/mes</span>
+.plan ul li {
+  margin: 10px 0;
+}
 
-      <ul>
-        <li>Hasta 50 trabajadores</li>
-        <li>Planificación tributaria</li>
-        <li>Atención preferente</li>
-      </ul>
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-      <a href="https://wa.me/56987610278" class="btn">Consultar</a>
-    </div>
+.btn:hover {
+  background: #ddd;
+}
 
-  </div>
-</section>
+/* COLORES */
+.basico {
+  background: linear-gradient(135deg, #3498db, #6dd5fa);
+}
+
+.pro {
+  background: linear-gradient(135deg, #28a745, #5cd65c);
+  transform: scale(1.05);
+}
+
+.premium {
+  background: linear-gradient(135deg, #8e44ad, #c77dff);
+}
+
+/* ETIQUETA */
+.etiqueta {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ffcc00;
+  color: black;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 
 
 <h2>Contáctanos</h2>
