@@ -81,17 +81,6 @@ h2 {
   color: white;
 }
 
-/* WHATSAPP */
-.whatsapp {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 20px;
-  background: #25D366;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
 /* SCROLL SUAVE */
 html {
   scroll-behavior: smooth;
@@ -101,7 +90,11 @@ html {
 <script>
 function toggleMenu() {
   const menu = document.getElementById("menu");
-  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
 }
 </script>
 
@@ -112,12 +105,12 @@ function toggleMenu() {
 <!-- BOTON MENU -->
 <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
 
-<!-- MENU -->
+<!-- MENU REAL (ARREGLADO) -->
 <div id="menu" class="menu">
-<a href="#inicio">Inicio</a>
-<a href="#quienes">Quiénes somos</a>
-<a href="#servicios">Servicios</a>
-<a href="#planes">Planes</a>
+  <a href="#inicio">Inicio</a>
+  <a href="#quienes">Quiénes somos</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#planes">Planes</a>
 </div>
 
 <!-- INICIO -->
@@ -176,21 +169,7 @@ con gestión administrativa, contable y financiera.
 
 </section>
 
-<!-- CONTACTO -->
-<section>
-<h2>Contáctanos</h2>
-
-<a class="whatsapp" href="https://wa.me/56975536749">
-WhatsApp
-</a>
-
-<p>📞 +56 9 75536749</p>
-<p>📧 scaviedes38@hotmail.com</p>
-
-</section>
-
 </body>
 </html>
-
 
 
