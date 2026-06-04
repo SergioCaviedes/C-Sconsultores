@@ -81,7 +81,32 @@ h2 {
   color: white;
 }
 
-/* SCROLL SUAVE */
+/* FORMULARIO */
+input, textarea {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -90,11 +115,7 @@ html {
 <script>
 function toggleMenu() {
   const menu = document.getElementById("menu");
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
 }
 </script>
 
@@ -102,15 +123,15 @@ function toggleMenu() {
 
 <body>
 
-<!-- BOTON MENU -->
+<!-- MENU -->
 <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
 
-<!-- MENU REAL (ARREGLADO) -->
 <div id="menu" class="menu">
-  <a href="#inicio">Inicio</a>
-  <a href="#quienes">Quiénes somos</a>
-  <a href="#servicios">Servicios</a>
-  <a href="#planes">Planes</a>
+<a href="#inicio">Inicio</a>
+<a href="#quienes">Quiénes somos</a>
+<a href="#servicios">Servicios</a>
+<a href="#planes">Planes</a>
+<a href="#contacto">Contacto</a>
 </div>
 
 <!-- INICIO -->
@@ -169,7 +190,35 @@ con gestión administrativa, contable y financiera.
 
 </section>
 
+<!-- CONTACTO -->
+<section id="contacto">
+<h2>Contáctanos</h2>
+
+<form action="https://formsubmit.co/scaviedes38@hotmail.com" method="POST">
+
+<input type="text" name="nombre" placeholder="Nombre" required><br>
+<input type="email" name="email" placeholder="Correo" required><br>
+<textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea><br>
+
+<button type="submit">Enviar</button>
+
+<input type="hidden" name="_captcha" value="false">
+
+</form>
+
+<br>
+
+<a class="whatsapp" href="https://wa.me/56975536749">
+WhatsApp 📲
+</a>
+
+<p>📞 +56 9 75536749</p>
+<p>📧 scaviedes38@hotmail.com</p>
+
+</section>
+
 </body>
 </html>
+``
 
 
