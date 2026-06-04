@@ -1,224 +1,226 @@
-index.html
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Inicio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caviedes Consultores</title>
 
-<link rel="stylesheet" href="estilos.css">
-<script src="script.js"></script>
-
-</head>
-
-<body>
-
-<button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
-
-<div id="menu" class="menu">
-<a href="index.html">Inicio</a>
-<a href="quienes.html">Quiénes somos</a>
-<a href="servicios.html">Servicios</a>
-<a href="planes.html">Planes</a>
-</div>
-
-<div class="header">
-<h1>Caviedes Consultores</h1>
-<p>Caviedes Ingenieros</p>
-<p><strong>Gestión contable y financiera</strong></p>
-</div>
-
-</body>
-</html>
-
-
-
-
-quienes.html
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Quiénes somos</title>
-
-<link rel="stylesheet" href="estilos.css">
-<script src="script.js"></script>
-
-</head>
-
-<body>
-
-<button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
-
-<div id="menu" class="menu">
-<a href="index.html">Inicio</a>
-<a href="quienes.html">Quiénes somos</a>
-<a href="servicios.html">Servicios</a>
-<a href="planes.html">Planes</a>
-</div>
-
-<div class="container">
-<h2>Quiénes somos</h2>
-
-<p>
-Somos Caviedes Consultores, especialistas en gestión
-administrativa, contable y financiera.
-</p>
-
-</div>
-
-</body>
-</html>
-
-servicios.html
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Servicios</title>
-
-<link rel="stylesheet" href="estilos.css">
-<script src="script.js"></script>
-
-</head>
-
-<body>
-
-<button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
-
-<div id="menu" class="menu">
-<a href="index.html">Inicio</a>
-<a href="quienes.html">Quiénes somos</a>
-<a href="servicios.html">Servicios</a>
-<a href="planes.html">Planes</a>
-</div>
-
-<div class="container">
-<h2>Nuestros Servicios</h2>
-
-<div class="grid">
-<div class="card">Recursos Humanos</div>
-<div class="card">Reclutamiento</div>
-<div class="card">Impuestos</div>
-<div class="card">Finanzas</div>
-</div>
-
-</div>
-
-</body>
-</html>
-
-planes.html
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Planes</title>
-
-<link rel="stylesheet" href="estilos.css">
-<script src="script.js"></script>
-
-</head>
-
-<body>
-
-<button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
-
-<div id="menu" class="menu">
-<a href="index.html">Inicio</a>
-<a href="quienes.html">Quiénes somos</a>
-<a href="servicios.html">Servicios</a>
-<a href="planes.html">Planes</a>
-</div>
-
-<div class="container">
-<h2>Nuestros Planes</h2>
-
-<p><strong>Básico:</strong> $80.000</p>
-<p><strong>Pro:</strong> Consultar</p>
-<p><strong>Premium:</strong> Consultar</p>
-
-</div>
-
-</body>
-</html>
-
-estilos.css
+<style>
 
 body {
-  margin: 0;
-  font-family: Arial;
-  background: #f4f6f8;
-}
-
-/* BOTON MENU */
-.menu-btn {
-  background: #0d2b45;
-  color: white;
-  padding: 15px;
-  width: 100%;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
+    margin: 0;
+    font-family: Arial;
+    background: #f4f6f8;
 }
 
 /* MENU */
-.menu {
-  display: none;
+nav {
   background: #0d2b45;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
 }
 
 .menu a {
-  display: block;
-  padding: 15px;
   color: white;
   text-decoration: none;
-  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .menu a:hover {
-  background: #28a745;
+  color: #4CAF50;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* HEADER */
-.header {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1554224155-6726b3ff858f') center/cover;
-  color: white;
-  text-align: center;
-  padding: 150px 20px;
+header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1554224155-6726b3ff858f') center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
 }
 
-/* CONTENIDO */
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px;
-  text-align: center;
+/* SECCIONES */
+section {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-/* SERVICIOS */
+h2 {
+    color: #0a2c52;
+}
+
+/* GRID SERVICIOS */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
+.boton {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    font-weight: bold;
 }
 
-script.js
-
-function toggleMenu() {
-  const menu = document.getElementById("menu");
-  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+.boton:hover {
+    background: #28a745;
+    color: white;
 }
-``
+
+/* PLANES */
+.plan {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav>
+  <ul class="menu">
+    <li>#inicio></li>
+    <li>#quienesQuiénes somos</a></li>
+    <li>#serviciosServicios</a></li>
+    <li>#planesPlanes</a></li>
+  </ul>
+</nav>
+
+<!-- INICIO -->
+<section id="inicio">
+<header>
+<h1>Caviedes Consultores</h1>
+<p>Caviedes Ingenieros</p>
+<p><strong>Soluciones contables y financieras</strong></p>
+</header>
+</section>
+
+<!-- QUIENES SOMOS -->
+<section id="quienes">
+<h2>Quiénes somos</h2>
+<p>
+En Caviedes Consultores ayudamos a empresas y emprendedores
+con gestión administrativa, contable y financiera.
+</p>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+<h2>Nuestros Servicios</h2>
+
+<div class="grid">
+<div class="boton">Asesoría Recursos Humanos</div>
+<div class="boton">Reclutamiento</div>
+<div class="boton">Gestión Documental</div>
+<div class="boton">Remuneraciones</div>
+<div class="boton">Contratos</div>
+<div class="boton">Impuestos</div>
+<div class="boton">Finanzas</div>
+<div class="boton">Renta</div>
+<div class="boton">Regularización</div>
+<div class="boton">Proyecciones</div>
+<div class="boton">Tesis</div>
+<div class="boton">Inicio Actividades</div>
+</div>
+
+</section>
+
+<!-- PLANES -->
+<section id="planes">
+<h2>Nuestros Planes</h2>
+
+<p style="color:#28a745; font-weight:bold;">
+Planes adaptables según tu empresa
+</p>
+
+<div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+
+<div class="plan" style="background:#3498db;">
+<h3>Básico</h3>
+<p>$80.000</p>
+<a href="https://wa.me/56975536749" class="whatsapp">Consultar</a>
+</div>
+
+<div class="plan" style="background:#28a745;">
+<h3>Pro</h3>
+<a href="https://wa.me/56975536749" class="whatsapp">Consultar</a>
+</div>
+
+<div class="plan" style="background:#8e44ad;">
+<h3>Premium</h3>
+<a href="https://wa.me/56975536749" class="whatsapp">Consultar</a>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACTO -->
+<section>
+<h2>Contáctanos</h2>
+
+<form action="https://formsubmit.co/scaviedes38@hotmail.com" method="POST">
+
+<input type="text" name="nombre" placeholder="Nombre" required><br><br>
+<input type="email" name="email" placeholder="Correo" required><br><br>
+<textarea name="mensaje" placeholder="Mensaje" required></textarea><br><br>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+<br>
+
+<a class="whatsapp" href="https://wa.me/56975536749">WhatsApp</a>
+
+<p>📞 +56 9 75536749</p>
+<p>📧 scaviedes38@hotmail.com</p>
+
+</section>
+
+<footer>
+© 2026 Caviedes Consultores
+</footer>
+
+</body>
+</html>
 
 
