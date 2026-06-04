@@ -14,6 +14,36 @@ body {
     background: #f4f6f8;
 }
 
+nav {
+  background: #0d2b45;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  color: #4CAF50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 /* HEADER con fondo profesional */
 header {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
@@ -106,61 +136,79 @@ footer {
 
 <body>
 
-<header>
+<nav>
+  <ul class="menu">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#quienes">Quiénes somos</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#planes">Planes</a></li>
+  </ul>
+</nav>
+
+<section id="inicio">
+  <header>
 <h1>Caviedes Consultores</h1>
 <p>Caviedes Ingenieros</p>
 <p><strong>Soluciones de gestión de personas, contables y financieras</strong></p>
 </header>
+</section>
 
-<section>
-
+<section id="quienes">
+  <h2>Quiénes somos</h2>
+  <p>
+    En Caviedes Consultores somos especialistas en gestión administrativa,
+    contable y financiera. Ayudamos a empresas y emprendedores a ordenar
+    sus procesos y mejorar sus resultados.
+  </p>
+</section>
+    
 <h2>Nuestros Servicios</h2>
 
-<div class="grid">
-    <div class="boton">Asesoría a Recursos Humanos</div>
-    <div class="boton">Reclutamiento y Selección</div>
-    <div class="boton">Gestión Documental</div>
-    <div class="boton">Remuneraciones y Pagos Previsionales</div>
-    <div class="boton">Contratos y Finiquitos</div>
-    <div class="boton">Impuestos y Declaraciones</div>
-    <div class="boton">Ordenar tus Finanzas</div>
-    <div class="boton">Renta atrasada</div>
-    <div class="boton">Regularización completa</div>
-    <div class="boton">Proyecciones y Estudio de Mercado</div>
-    <div class="boton">Ayudamos a tu Tesis</div>
-    <div class="boton">Inicio de Actividades</div>  
-  ``
+<<div class="grid">>
+    <<div class="boton">Asesoría a Recursos Humanos</div>>
+    <<div class="boton">Reclutamiento y Selección</div>>
+    <<div class="boton">Gestión Documental</div>>
+    <<div class="boton">Remuneraciones y Pagos Previsionales</div>>
+    <<div class="boton">Contratos y Finiquitos</div>>
+    <<div class="boton">Impuestos y Declaraciones</div>>
+    <<div class="boton">Ordenar tus Finanzas</div>>
+    <<div class="boton">Renta atrasada</div>>
+    <<div class="boton">Regularización completa</div>>
+    <<div class="boton">Proyecciones y Estudio de Mercado</div>>
+    <<div class="boton">Ayudamos a tu Tesis</div>>
+    <<div class="boton">Inicio de Actividades</div>>  
+    <``>
 </div>
     
 
-  <h2>Nuestros Planes</h2>
+  <<h2>Nuestros Planes</h2>>
 
 <p style="color:#28a745; font-weight:bold; margin-bottom:20px;">
 ✔ Planes adaptables según tu empresa — consulta sin compromiso
 </p>
 
-  <div style="display:flex; justify-content:center; gap:20px;">
+  <<div style="display:flex; justify-content:center; gap:20px;">>
 
-    <div style="background:#3498db; color:white; padding:20px; border-radius:10px;">
-      <h3>Básico</h3>
-      <p>$80.000</p>
-      <a href="https://wa.me/56975536749" style="background:white; color:black; padding:6px; border-radius:5px;">Consultar</a>
-    </div>
+    <<div style="background:#3498db; color:white; padding:20px; border-radius:10px;">>
+      <<h3>Básico</h3>>
+      <<p>$80.000</p>>
+      <<a href="https://wa.me/56975536749" style="background:white; color:black; padding:6px; border-radius:5px;">Consultar</a>>
+    <</div>>
 
-    <div style="background:#28a745; color:white; padding:20px; border-radius:10px;">
-      <h3>Pro ⭐</h3>
+    <<div style="background:#28a745; color:white; padding:20px; border-radius:10px;">>
+      <<h3>Pro ⭐</h3>>
       
-      <a href="https://wa.me/56975536749" style="background:white; color:black; padding:6px; border-radius:5px;">Consultar</a>
-    </div>
+      <<a href="https://wa.me/56975536749" style="background:white; color:black; padding:6px; border-radius:5px;">Consultar</a>>
+    <</div>>
 
-    <div style="background:#8e44ad; color:white; padding:20px; border-radius:10px;">
-      <h3>Premium</h3>
+    <<div style="background:#8e44ad; color:white; padding:20px; border-radius:10px;">>
+      <<h3>Premium</h3>>
   
-      <a href="https://wa.me/56975536749" style="background:white; color:black; padding:6px; border-radius:5px;">Consultar</a>
-    </div>
+      <<a href="https://wa.me/56975536749" style="background:white; color:black; padding:6px; border-radius:5px;">Consultar</a>>
+    <</div>>
 
-  </div>
-</section>
+  <</div>>
+<</section>>
 ``
 
 <h2>Contáctanos</h2>
